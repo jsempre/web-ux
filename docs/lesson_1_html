@@ -2,12 +2,12 @@
 HTML (Hypertext Markup Language) is not a programming language. It is a markup language that tells web browsers how to structure the web pages you visit. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on.
 
 ## Types of general element tags
-<p>Content</p>
+<h1>Heading content</h1>
+<p>New Paragraph content</p>
+<br>Line break
 <strong>Bold</strong> content
 <em>Italisized</em> content
 <a href="https://www.google.com">Visit Google!</a>
-<br>Line break
-<h1>Heading content</h1>
 <img src="https://live.staticflickr.com/396/18098503124_c2de1f0796_c.jpg" alt="A good doggy" width="500" height="600">
 
 ## Nesting elements
@@ -28,14 +28,23 @@ Unordered lists:
   <li>Rabbits</li>
 </ul>
 
-Tables:
 <table>
   <tr>
-    <th>Month</th>
-    <th>Savings</th>
+    <th>Game</th>
+    <th>Rating</th>
   </tr>
   <tr>
-    <td>January</td>
-    <td>$100</td>
+    <td>Bioshock</td>
+    <td>9.5</td>
+  </tr>
+  <tr>
+    <td>Sims 4</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>Portal</td>
+    <td>10</td>
   </tr>
 </table>
+  </body>
+</html>
