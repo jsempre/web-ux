@@ -1,3 +1,35 @@
+Create a new project in Glitch and place the following button element in the body of the index.html file:
+<div>
+  <button class="sampleJS">
+    Run Sample Javascript
+  </button>
+</div>
+This will give us a way to test the Javascript we write.
+
+Functions
+Functions are reusable blocks of code that you can write once and run again and again, saving the need to keep repeating code all the time. This is really useful. There are a number of ways to define functions, but for now we'll concentrate on one simple type. Here we have defined a function by using the keyword function, followed by a name, with parentheses put after it. After that we put two curly braces ({ }). Inside the curly braces goes all the code that we want to run whenever we call the function.
+When we want to run the code, we type the name of the function followed by the parentheses.
+
+Create the following function in the script.js file in Glitch
+function runSampleJS(){
+  alert('You clicked a button');
+}
+Add the following two lines to end of the same script.js file so that our function is called when the button we created above is clicked.
+const runJS = document.querySelector('.sampleJS'); // This line is an easy way to refer to html elements using an identifying class, we won't get into the mechanics during this intro course
+runJS.addEventListener('click', runSampleJS); // We will explain events in more detail below, for now just note we are defining that our function 'runSampleJS' will run when our button is clicked.
+
+Now view your site, click the button and you should see the alert text pop up.
+
+Variables
+Variables are basically containers for values (such as numbers, or strings of text). You create a variable with the keyword let (or var) followed by a name for your variable. 
+Constants are used to store values that are immutable or can't be changed and are created with the keyword const.
+Edit your function to use a variable using the following example:
+function runSampleJS(){
+  let message = 'You clicked a button';
+  alert(message);
+}
+
+Operators
 JavaScript operators allow us to perform tests, do math, join strings together, and other such things.
 
 If you haven't already done so, save your code, refresh the page in your browser, and open the developer tools JavaScript console. Then we can try typing in the examples shown below — type in each one from the "Example" columns exactly as shown, pressing Return/Enter after each one, and see what results they return.
@@ -41,3 +73,6 @@ Operator	Name	Example
 >	Greater than	
 6 > 10 // false
 20 > 10  // true
+
+Conditionals
+Events
